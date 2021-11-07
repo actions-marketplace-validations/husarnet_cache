@@ -1,5 +1,10 @@
 # cache
 
+> **IMPORTANT!**
+>
+> `post-if:` value changed from `success()` to `always()`. Thanks to that cache is always saved in `Post...` phase even in some previous steps fail.
+
+
 This action allows caching dependencies and build outputs to improve workflow execution time.
 
 <a href="https://github.com/actions/cache/actions?query=workflow%3ATests"><img alt="GitHub Actions status" src="https://github.com/actions/cache/workflows/Tests/badge.svg?branch=main&event=push"></a>

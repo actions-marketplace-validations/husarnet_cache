@@ -1,6 +1,6 @@
-name: 'Cache'
+name: 'Cache-Always'
 description: 'Cache artifacts like dependencies and build outputs to improve workflow execution time'
-author: 'GitHub'
+author: 'Dominik'
 inputs:
   path:
     description: 'A list of files, directories, and wildcard patterns to cache and restore'
@@ -22,7 +22,7 @@ runs:
   main: 'dist/restore/index.js'
   post: 'dist/save/index.js'
   post-if: 'always()'
-  
+
 branding:
   icon: 'archive'
   color: 'gray-dark'
